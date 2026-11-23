@@ -1,0 +1,39 @@
+project:
+  name: "{{PROJECT_NAME}}"
+  repo_url: "{{REPO_URL}}"
+  domains:
+    - {{DOMAIN}}
+
+id:
+  style: {{ID_STYLE}}
+  digits: {{ID_DIGITS}}
+
+authoring:
+  primary_markup: {{PRIMARY_MARKUP}}
+  modal_verb: {{MODAL_VERB}}
+
+model:
+  decision_types:
+    - adr
+    - bdr
+    - wdr
+  ver_method_tags:
+    - unit
+    - integration
+    - network
+    - analysis
+  test_file_patterns:
+    - "test_*"
+    - "*_test.*"
+    - "check_*"
+  code_tag_exclude: []
+
+build:
+  cmake_mode: {{CMAKE_MODE}}
+  python_manifest: {{PYTHON_MANIFEST}}
+  docs_auto_install: {{DOCS_AUTO_INSTALL}}
+  graphviz: {{GRAPHVIZ}}
+
+checks:
+  file_headers: {{FILE_HEADERS}}
+  prose_packing: {{PROSE_PACKING}}

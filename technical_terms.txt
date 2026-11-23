@@ -1,0 +1,162 @@
+# Copyright (c) 2026 Deniz Eren <deniz.eren@outlook.com>
+# MIT License
+#
+# Project technical terms for docs-traceability-setup.
+# Use any currently installed simplified technical English skills to check;
+# skip if not installed.
+
+# --- Technical Nouns: systems, tools, and components -----------------------
+TN: auditor                     # model audit tool
+TN: checker                     # source-text verification tool
+TN: formatter                   # code formatting tool
+TN: linter                      # static analysis tool
+TN: parser                      # syntax parser component
+TN: scanner                     # in-code tag scanner tool
+TN: subagent                    # delegated agent component
+TN: validator                   # schema/header validation tool
+
+# --- Technical Nouns: documents, records, and specifications ---------------
+TN: changelog                   # version change record
+TN: convention                  # recorded project rule
+TN: copyright                   # legal ownership notice
+TN: document                    # authored documentation file
+TN: documentation               # project document set
+TN: glossary                    # terminology list
+TN: license                     # software usage license
+TN: manifest                    # dependency list file
+TN: notice                      # legal or tool message
+TN: requirement                 # normative specification item
+TN: roadmap                     # milestone planning document
+TN: specification               # formal engineering document
+
+# --- Technical Nouns: software tools, languages, standards -----------------
+TN: doxygen                     # documentation comment syntax
+TN: editorconfig                # editor configuration standard
+TN: git                         # version control system
+TN: graphviz                    # graph layout tool
+TN: jinja                       # template engine
+TN: markdown                    # lightweight markup language
+TN: python                      # programming language
+TN: ruff                        # Python linter and formatter
+TN: sphinx                      # documentation generator
+TN: unittest                    # Python unit test framework
+
+# --- Technical Nouns: computer science and traceability --------------------
+TN: abstraction                 # engineering layer level
+TN: alias                       # alternate identifier or label
+TN: architecture                # system structural design
+TN: artifact                    # build or workflow output
+TN: attribution                 # third-party credit record
+TN: back-link                   # computed reverse link
+TN: backtick                    # Markdown fence delimiter
+TN: black-box                   # external behavior model
+TN: block                       # syntax or header block
+TN: branch                      # version-control branch
+TN: build                       # software build process
+TN: caption                     # table title text
+TN: checkbox                    # Markdown task status marker
+TN: checklist                   # verification item list
+TN: column                      # text column or table column
+TN: comment                     # source-code comment
+TN: commit                      # version-control revision
+TN: config                      # configuration shorthand
+TN: configuration               # tool or project settings
+TN: context                     # execution or ADR background
+TN: coverage                    # requirement verification coverage
+TN: default                     # fallback configuration value
+TN: delimiter                   # field separator character
+TN: dependency                  # required external package
+TN: directive                   # Sphinx/MyST block element
+TN: directory                   # filesystem folder
+TN: docs-as-code                # versioned documentation model
+TN: docstring                   # Python documentation string
+TN: domain                      # traceability ownership scope
+TN: enum                        # enumerated schema values
+TN: environment                 # runtime or virtual environment
+TN: fence                       # delimited code/directive block
+TN: file                        # filesystem file
+TN: filename                    # filesystem file name
+TN: footer                      # commit trailer line
+TN: format                      # data or text layout
+TN: frontmatter                 # YAML metadata block
+TN: glob                        # wildcard path pattern
+TN: governance                  # repository policy rules
+TN: header                      # file or table header
+TN: heading                     # Markdown/RST section title
+TN: identifier                  # unique symbol or ID
+TN: identity                    # Git author identity
+TN: indentation                 # leading whitespace level
+TN: index                       # generated catalog page
+TN: key                         # configuration key
+TN: layout                      # directory or block structure
+TN: library                     # reusable software package
+TN: line                        # text line
+TN: link                        # traceability or web link
+TN: list                        # ordered sequence or bullet list
+TN: log                         # execution or Git history log
+TN: markup                      # structured text syntax
+TN: matrix                      # permitted link table
+TN: migration                   # model upgrade workflow
+TN: milestone                   # planned project checkpoint
+TN: modal                       # requirement obligation verb
+TN: model                       # traceability data model
+TN: module                      # Python or scaffolding module
+TN: need                        # Sphinx-Needs item
+TN: option                      # CLI or directive parameter
+TN: overview                    # top-level summary view
+TN: packing                     # greedy prose line-wrapping
+TN: paragraph                   # contiguous prose block
+TN: placeholder                 # template substitution token
+TN: prefix                      # ID type segment
+TN: project                     # software repository project
+TN: prose                       # natural-language text
+TN: protocol                    # defined operational procedure
+TN: rationale                   # engineering justification
+TN: regex                       # regular expression pattern
+TN: remediation                 # defect correction action
+TN: repository                  # version-control project store
+TN: root                        # top-level directory
+TN: rule                        # enforced check or policy
+TN: scaffolding                 # project structure generation
+TN: schema                      # structured validation definition
+TN: script                      # executable automation program
+TN: section                     # document or INI division
+TN: shebang                     # script interpreter line
+TN: skill                       # Agent Skill package
+TN: slug                        # human-readable ID suffix
+TN: status                      # lifecycle state value
+TN: stdlib                      # Python standard library
+TN: style                       # formatting or ID convention
+TN: subdirectory                # nested directory
+TN: suffix                      # trailing ID segment
+TN: suite                       # collection of unit tests
+TN: symlink                     # symbolic filesystem link
+TN: syntax                      # formal language grammar
+TN: table                       # structured rows and columns
+TN: template                    # reusable file blueprint
+TN: text                        # character string content
+TN: token                       # lexical unit or placeholder
+TN: traceability                # requirement-to-test linking
+TN: underline                   # RST heading underline
+TN: unicode                     # character encoding standard
+TN: user                        # human operator
+TN: venv                        # Python virtual environment
+TN: verification                # requirement compliance testing
+TN: version                     # release identifier
+TN: warning                     # build or check diagnostic
+TN: white-box                   # internal structural model
+TN: workflow                    # repeatable development process
+
+# --- Technical Verbs: system and software operations -----------------------
+TV: configure                   # set tool or project options
+TV: deprecate                   # mark as obsolete for removal
+TV: derive                      # trace child requirement to parent
+TV: lint                        # run static code analysis
+TV: migrate                     # upgrade repository to new model
+TV: parse                       # analyze structured text
+TV: render                      # produce output from templates
+TV: run (runs, ran)             # execute a command or test
+TV: satisfy (satisfies, satisfied)  # fulfill requirement in design
+TV: scaffold                    # generate initial project files
+TV: supersede                   # replace an earlier decision
+TV: validate                    # check against formal schema

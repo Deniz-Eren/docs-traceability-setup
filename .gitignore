@@ -1,0 +1,30 @@
+# Build output
+build/
+dist/
+out/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# Language artifacts
+*.pyc
+__pycache__/
+*.egg-info/
+.ruff_cache/
+
+# Development environment
+.venv/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.suo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Do not ignore source files. Do not add patterns for src/, include/, or tests/.
+# Do not use broad globs. A glob such as build-* can match project directories.

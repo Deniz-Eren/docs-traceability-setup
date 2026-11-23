@@ -1,0 +1,45 @@
+# Copyright (c) 2026 Deniz Eren <deniz.eren@outlook.com>
+# EditorConfig for docs-traceability-setup.
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+max_line_length = 80
+
+[*.py]
+indent_size = 4
+
+[CMakeLists.txt]
+indent_size = 4
+
+[*.{yaml,yml,json}]
+max_line_length = off
+
+# Immutable specifications, license texts, target templates with placeholders,
+# and scaffolding harness scripts are outside the repository text checker scope.
+[LICENSE.md]
+max_line_length = off
+
+[docs/init-prompt.md]
+max_line_length = off
+
+[docs/THIRD-PARTY-NOTICES.md]
+max_line_length = off
+
+[docs/skills/*/references/**]
+max_line_length = off
+
+[assets/repo/**]
+max_line_length = off
+
+[scripts/*-agent.sh]
+max_line_length = off
+
+[file-header]
+01 = Copyright (c) 2026 Deniz Eren <deniz.eren@outlook.com>
+02 = MIT License

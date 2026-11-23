@@ -1,0 +1,16 @@
+# Copyright (c) 2026 Deniz Eren <deniz.eren@outlook.com>
+# MIT License
+#
+# Multi-word technical phrases for docs-traceability-setup.
+# Use any currently installed simplified technical English skills to check;
+# skip if not installed.
+
+# --- Computer science and software engineering phrases ---------------------
+exit code
+file header
+line length
+prose packing
+source code
+standard library
+unit test
+virtual environment

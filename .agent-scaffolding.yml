@@ -1,0 +1,58 @@
+# agent-scaffolding configuration.
+# Written by the agent-scaffolding agent skill. Commit this file.
+# After you change this file, apply the skill again in "apply" mode.
+
+skill_version: "0.2.0"
+
+project:
+  name: "docs-traceability-setup"
+  description: "Agent Skill for scaffolding and migrating Sphinx/MyST/Sphinx-Needs docs-as-code traceability models with CMake/CTest and Python source-text checks."
+  type: mixed               # software | documentation | mixed
+  languages: [python, markdown]
+  language_standard: "Python 3.11+"
+  platforms: [linux]
+  license: "MIT License"
+  license_file: "LICENSE.md"
+  copyright: "Copyright (c) 2026 Deniz Eren <deniz.eren@outlook.com>"
+
+# Build: cmake, make, poetry, npm, cargo, gradle, go.
+# Test: pytest, unittest, gtest, jest, vitest, cargo. Lint: clang-tidy, ruff, pylint, eslint, clippy.
+# Format: clang-format, ruff, black, prettier, rustfmt.
+
+operations:
+  commit_mode: autonomous   # autonomous | hitl
+  build_system: none
+  test_framework: unittest
+  linter: ruff
+  formatter: ruff
+  build_convention: none    # out-of-source | in-source | none
+  dev_environment: native   # auto | native | containerized | none
+
+# "current_user" = the name and the email of the current user. The agents read
+# them from the git configuration of the environment (git config user.name,
+# git config user.email). A project can also put a fixed name and email here.
+identity:
+  git_author_name: current_user
+  git_author_email: current_user
+
+modules:                    # defaults: references/INTERVIEW.md §3
+  dev_environment: true
+  build_agents: true
+  tool_configs: true
+  boilerplate: false        # use this only for new software with no source files
+  copyright: true
+  agent_platforms: []       # links for platforms that do not read .agents/skills
+
+specs:                      # specifications that the skill copies into the project
+  commits: true
+  semver: true
+  skills: true
+
+exclude_paths: [assets/repo]
+
+pre_existing_documents:
+  - label: Initial Prompt
+    source: docs/init-prompt.md
+    destination: docs/init-prompt.md
+    policy: immutable
+    notes: "Original specification prompt for the docs-traceability-setup skill."
