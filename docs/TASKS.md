@@ -21,6 +21,8 @@ by category, ordered newest first within each category.
 
 <!-- [CAT] Development -->
 
+- [x] COMPLETE 2026-11-24 docs: document resultant target project file structure
+  in README.md
 - [x] COMPLETE 2026-11-24 feat: port and replace pre-existing project
   scaffolding files when applying docs-traceability-setup
 - [x] COMPLETE 2026-11-20 docs: align repository documentation with simplified

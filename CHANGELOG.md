@@ -48,6 +48,8 @@ Record the important changes of docs-traceability-setup. The format follows
 
 ### Added
 
+- Resultant target project file structure overview and behavior summary in
+  `README.md`.
 - General port-and-replace procedure for repositories with pre-existing project
   scaffolding or state documents equivalent to the impacted traceability files
   (vision, architecture, decisions, conventions, tasks, and roadmap): ports and
