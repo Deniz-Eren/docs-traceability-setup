@@ -21,6 +21,9 @@ by category, ordered newest first within each category.
 
 <!-- [CAT] Development -->
 
+- [x] COMPLETE 2026-11-28 refactor: write short license summaries with no full
+  license text blocks in THIRD-PARTY-NOTICES.md and state-management skill
+  (ADR-12)
 - [x] COMPLETE 2026-11-24 docs: document resultant target project file structure
   in README.md
 - [x] COMPLETE 2026-11-24 feat: port and replace pre-existing project

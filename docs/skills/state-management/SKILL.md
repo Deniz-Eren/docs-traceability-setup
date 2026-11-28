@@ -47,9 +47,15 @@ defaults, and missing tools.
 
 ## THIRD-PARTY-NOTICES.md
 
-- For a **copied file or snippet**, add an entry to Section 1.
-- For a **package dependency**, add an entry to Section 2.
-- Include the source URL and the full license text.
+- Do not copy full license text blocks into
+  [docs/THIRD-PARTY-NOTICES.md](../../THIRD-PARTY-NOTICES.md). Write a short
+  summary of the license type. Give the license name or SPDX identifier, the
+  copyright holder, and a link to the license text or upstream repository.
+- For a **copied file or snippet**, add a short summary (`Component(s) Used`,
+  `Source`, and `Source License`) to Section 1.
+- For a **package dependency or build tool**, add a short summary (`Function`,
+  `Source`, and `License`) to Section 2.
+- Keep source URLs accurate, and do not erase entries.
 
 ## Before each commit
 

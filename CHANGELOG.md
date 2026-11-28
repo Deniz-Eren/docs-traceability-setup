@@ -21,6 +21,9 @@ Record the important changes of docs-traceability-setup. The format follows
 
 ### Changed
 
+- Updated `docs/THIRD-PARTY-NOTICES.md` and
+  `docs/skills/state-management/SKILL.md` to use short license summaries with no
+  full license text blocks (ADR-12).
 - Revised editable repository documentation, skill manuals, and code comments
   for simplified technical English style (sentence length, active voice, modal
   verbs, and consistent terminology). Use any currently installed simplified
