@@ -23,6 +23,40 @@ in groups by category. The ADRs are newest first (git log order).
 
 <!-- [CAT] Governance -->
 
+## ADR-12 (2026-11-28): Record Third-Party Licenses as Short Summaries
+
+### Context
+
+`docs/THIRD-PARTY-NOTICES.md` and `docs/skills/state-management/SKILL.md` copied
+full license text blocks into `docs/THIRD-PARTY-NOTICES.md`. This added hundreds
+of lines of legal text for copied specs and made the notice file not easy to
+read or keep up to date.
+
+### Decision
+
+- Update `docs/THIRD-PARTY-NOTICES.md` so no full license text blocks go into
+  the document.
+- Write a short summary for each license type. Give the license name or SPDX
+  identifier, the copyright holder, and a link to the license text or upstream
+  repository.
+- Divide `docs/THIRD-PARTY-NOTICES.md` into Section 1 (`Copied Files and
+  Snippets`: `Component(s) Used`, `Source`, and `Source License`) and Section 2
+  (`Dependencies and Build Tools`: `Function`, `Source`, and `License`).
+- Update `docs/skills/state-management/SKILL.md` so agents write short summaries
+  with no full license text blocks.
+
+### Alternatives
+
+- Keep full license text blocks in `docs/THIRD-PARTY-NOTICES.md` (keeps hundreds
+  of lines of legal text inside the notice file)
+- Keep full license text blocks for Section 1 and summaries only for Section 2
+  (leaves large copied spec license blocks in the document)
+
+### Consequences
+
+- `docs/THIRD-PARTY-NOTICES.md` stays short, clear, and easy to keep up to date.
+- Agents record short attribution summaries with no raw license blocks.
+
 ## ADR-11 (2026-11-24): Port and replace pre-existing project scaffolding files
 
 ### Context
